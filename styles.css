@@ -1,75 +1,126 @@
 /* Reset dasar */
-body {
+body, h1, h2, p, a {
     margin: 0;
+    padding: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
     color: #333;
+    text-decoration: none;
+}
+
+body {
+    background-color: #f9f9f9;
 }
 
 /* Header */
 .header {
     background-color: #1e88e5;
     color: white;
-    padding: 15px 20px;
-    text-align: center;
+    padding: 15px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
     font-size: 24px;
     font-weight: bold;
 }
 
-/* Main section */
-.main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    padding: 20px;
-}
-
-.menu {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.row {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.menu-item {
-    padding: 15px 30px;
-    font-size: 18px;
+.nav a {
+    margin-left: 20px;
     color: white;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+.main {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.course {
     background-color: #1565c0;
-    border: none;
+    color: white;
+    padding: 20px 40px;
     border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-.menu-item:hover {
+.course:hover {
     background-color: #0d47a1;
 }
 
-/* Social Media */
-.social-media {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+.app-promo {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-.social-link {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 10px 20px;
-    background-color: #1e88e5;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+.app-promo h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
 }
 
-.social-link:hover {
-    background-color: #0d47a1;
+.app-promo p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.app-links a {
+    margin: 0 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #e3f2fd;
+    padding: 20px 0;
+}
+
+.footer .container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-nav a {
+    display: block;
+    margin: 5px 0;
+    color: #1e88e5;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer p {
+    margin-top: 10px;
+    color: #666;
 }
